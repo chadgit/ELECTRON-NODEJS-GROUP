@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lobipanel - jQuery plugin for bootstrap panels. It extends panels with several common and useful
+        functions.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Default installation-->
+    <link rel="stylesheet" href="./app_files/lobipanel/lib/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="./app_files/lobipanel/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./app_files/lobipanel/lib/font-awesome/css/font-awesome.min.css"/>
+
+
+    <!--Installation using bower. Preferred!!! -->
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>-->
+    <!--<link rel="stylesheet" href="bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css"/>-->
+    <!--Run `bower install font-awesome` and uncomment this line to see font awesome examples-->
+    <!--<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>-->
+
+    <link rel="stylesheet" href="./app_files/lobipanel/css/lobipanel.css"/>
+
+    <link rel="stylesheet" href="./app_files/lobipanel/lib/highlight/github.css"/>
+    <link rel="stylesheet" href="./ui/lobipanel/demo/documentation.css"/>
+    <link rel="stylesheet" href="./ui/lobipanel/demo/demo.css"/>
+</head>
+<body>
+
+<div style="padding: 25px;">
+    <div class="row lobipanel-parent-stateful">
+        <div class="col-sm-6" data-inner-id="lobipanel-parent-stateful1">
+            <div class="panel panel-primary" data-sortable="true" data-inner-id="lobipanel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <h4>Panel title</h4>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    Panel 2
+                </div>
+            </div>
+            <div class="panel panel-default" data-sortable="true" data-inner-id="lobipanel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <h4>Panel title</h4>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    Panel 3
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 lobipanel-parent-sortable" data-inner-id="lobipanel-parent-stateful2">
+            <div class="panel panel-success" data-sortable="true" data-inner-id="lobipanel-success">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <h4>Panel title</h4>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- Single button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-danger" data-sortable="true" data-inner-id="lobipanel-danger">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <h4>Panel title</h4>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    Panel 5
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row lobipanel-parent-stateful">
+
+        <div class="col-sm-6 lobipanel-parent-sortable" data-inner-id="lobipanel-parent-stateful3">
+        </div>
+        <div class="col-sm-6 lobipanel-parent-sortable" data-inner-id="lobipanel-parent-stateful4">
+        </div>
+    </div>
+</div>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+<!--Default installation-->
+<script src="./app_files/lobipanel/lib/jquery.1.11.min.js"></script>
+<script src="./app_files/lobipanel/lib/jquery-ui.min.js"></script>
+<script src="./app_files/lobipanel/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="./app_files/lobipanel/bootstrap/js/bootstrap.min.js"></script>
+
+
+<script src="./app_files/lobipanel/js/lobipanel.js"></script>
+
+<script>
+    $(function () {
+        $('.lobipanel-parent-stateful .panel').lobiPanel({
+            stateful: true
+        });
+    });
+</script>
+    <script>if (window.module) module = window.module;</script>
+
+</body>
+</html>
